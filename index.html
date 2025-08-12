@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌸 Web Development Cheatsheet 🌸</h1>
+        <p>Your elegant reference guide for HTML, CSS, Sass, jQuery & JavaScript</p>
+    </header>
+
+    <nav class="nav-tabs">
+        <button class="tab-btn active" data-tab="html">HTML</button>
+        <button class="tab-btn" data-tab="css">CSS</button>
+        <button class="tab-btn" data-tab="sass">Sass</button>
+        <button class="tab-btn" data-tab="jquery">jQuery</button>
+        <button class="tab-btn" data-tab="javascript">JavaScript</button>
+    </nav>
+
+    <main class="container">
+        <!-- HTML Section -->
+        <section id="html" class="tab-content active">
+            <h2>HTML Essentials</h2>
+            
+            <div class="card">
+                <h3>🏗️ Document Structure</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📝 Text Elements</h3>
+                <pre><code>&lt;h1&gt; to &lt;h6&gt;     Headings
+&lt;p&gt;             Paragraph
+&lt;br&gt;            Line break
+&lt;hr&gt;            Horizontal rule
+&lt;strong&gt;        Important text
+&lt;em&gt;            Emphasized text
+&lt;mark&gt;          Highlighted text
+&lt;small&gt;         Smaller text
+&lt;del&gt;           Deleted text
+&lt;ins&gt;           Inserted text</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🔗 Links & Media</h3>
+                <pre><code>&lt;a href="url"&gt;Link text&lt;/a&gt;
+&lt;img src="image.jpg" alt="description"&gt;
+&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📋 Lists</h3>
+                <pre><code>&lt;ul&gt;               Unordered list
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;               Ordered list
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;               Description list
+    &lt;dt&gt;Term&lt;/dt&gt;
+    &lt;dd&gt;Description&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📊 Tables</h3>
+                <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📝 Forms</h3>
+                <pre><code>&lt;form action="submit.php" method="post"&gt;
+    &lt;input type="text" name="username" placeholder="Username"&gt;
+    &lt;input type="email" name="email" required&gt;
+    &lt;input type="password" name="password"&gt;
+    &lt;textarea name="message"&gt;&lt;/textarea&gt;
+    &lt;select name="country"&gt;
+        &lt;option value="us"&gt;United States&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- CSS Section -->
+        <section id="css" class="tab-content">
+            <h2>CSS Essentials</h2>
+            
+            <div class="card">
+                <h3>🎨 Selectors</h3>
+                <pre><code>element         Type selector
+.class          Class selector
+#id             ID selector
+*               Universal selector
+element,element Group selector
+element element Descendant selector
+element>element Child selector
+element+element Adjacent sibling
+element~element General sibling
+:hover          Pseudo-class
+::before        Pseudo-element</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📐 Box Model</h3>
+                <pre><code>margin: 10px;               All sides
+margin: 10px 20px;          Top/bottom, left/right
+margin: 10px 20px 30px 40px; Top, right, bottom, left
+padding: 10px;              Same syntax as margin
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🎪 Display & Position</h3>
+                <pre><code>display: block | inline | inline-block | flex | grid | none;
+position: static | relative | absolute | fixed | sticky;
+float: left | right | none;
+clear: left | right | both | none;
+overflow: visible | hidden | scroll | auto;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🌈 Colors & Backgrounds</h3>
+                <pre><code>color: #ff6b9d;
+color: rgb(255, 107, 157);
+color: rgba(255, 107, 157, 0.8);
+color: hsl(330, 100%, 71%);
+
+background-color: #f8f9fa;
+background-image: url('image.jpg');
+background-size: cover | contain | 100px 200px;
+background-position: center | top left | 50% 50%;
+background-repeat: no-repeat | repeat | repeat-x | repeat-y;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📝 Typography</h3>
+                <pre><code>font-family: 'Arial', sans-serif;
+font-size: 16px | 1em | 1rem;
+font-weight: normal | bold | 400 | 700;
+font-style: normal | italic | oblique;
+text-align: left | center | right | justify;
+text-decoration: none | underline | line-through;
+line-height: 1.5;
+letter-spacing: 2px;
+text-transform: uppercase | lowercase | capitalize;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🔧 Flexbox</h3>
+                <pre><code>/* Container */
+display: flex;
+flex-direction: row | column;
+justify-content: flex-start | center | flex-end | space-between | space-around;
+align-items: stretch | flex-start | center | flex-end;
+flex-wrap: nowrap | wrap;
+
+/* Items */
+flex: 1;
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: auto;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🔲 Grid</h3>
+                <pre><code>display: grid;
+grid-template-columns: 1fr 1fr 1fr | repeat(3, 1fr) | 200px auto 1fr;
+grid-template-rows: 100px auto;
+grid-gap: 10px;
+grid-column: 1 / 3;
+grid-row: 1 / 2;
+justify-items: start | center | end | stretch;
+align-items: start | center | end | stretch;</code></pre>
+            </div>
+        </section>
+
+        <!-- Sass Section -->
+        <section id="sass" class="tab-content">
+            <h2>Sass/SCSS Essentials</h2>
+            
+            <div class="card">
+                <h3>🎯 Variables</h3>
+                <pre><code>// SCSS
+$primary-color: #ff6b9d;
+$font-size: 16px;
+$margin: 20px;
+
+.button {
+    color: $primary-color;
+    font-size: $font-size;
+    margin: $margin;
+}</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🪆 Nesting</h3>
+                <pre><code>.navbar {
+    background: $primary-color;
+    
+    ul {
+        list-style: none;
+        
+        li {
+            display: inline-block;
+            
+            a {
+                text-decoration: none;
+                
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🧩 Mixins</h3>
+                <pre><code>@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    @include button-style($primary-color, white);
+}
+
+.secondary-btn {
+    @include button-style(gray, white);
+}</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📦 Functions</h3>
+                <pre><code>@function calculate-rem($px) {
+    @return #{$px / 16}rem;
+}
+
+@function lighten-color($color, $percentage) {
+    @return lighten($color, $percentage);
+}
+
+.title {
+    font-size: calculate-rem(24);
+    color: lighten-color($primary-color, 20%);
+}</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Control Directives</h3>
+                <pre><code>// @if / @else
+@mixin text-color($dark: false) {
+    @if $dark {
+        color: white;
+    } @else {
+        color: black;
+    }
+}
+
+// @for loop
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+}
+
+// @each loop
+$colors: red, green, blue;
+@each $color in $colors {
+    .#{$color}-text {
+        color: $color;
+    }
+}</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📁 Imports & Partials</h3>
+                <pre><code>// _variables.scss (partial file)
+$primary-color: #ff6b9d;
+$secondary-color: #c77dff;
+
+// main.scss
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'components';</code></pre>
+            </div>
+        </section>
+
+        <!-- jQuery Section -->
+        <section id="jquery" class="tab-content">
+            <h2>jQuery Essentials</h2>
+            
+            <div class="card">
+                <h3>🎯 Selectors</h3>
+                <pre><code>$('element')        Element selector
+$('.class')         Class selector
+$('#id')            ID selector
+$('*')              All elements
+$(':first')         First element
+$(':last')          Last element
+$(':even')          Even elements
+$(':odd')           Odd elements
+$(':contains(text)') Contains text
+$('[attribute]')    Has attribute
+$('[attribute=value]') Attribute equals value</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📝 DOM Manipulation</h3>
+                <pre><code>// Content
+$('.element').text('New text');
+$('.element').html('&lt;b&gt;New HTML&lt;/b&gt;');
+$('.element').val('New value');
+
+// Attributes
+$('.element').attr('src', 'image.jpg');
+$('.element').removeAttr('disabled');
+$('.element').data('key', 'value');
+
+// CSS Classes
+$('.element').addClass('new-class');
+$('.element').removeClass('old-class');
+$('.element').toggleClass('toggle-class');
+$('.element').hasClass('check-class');</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🏗️ DOM Structure</h3>
+                <pre><code>// Adding Elements
+$('.container').append('&lt;p&gt;End&lt;/p&gt;');
+$('.container').prepend('&lt;p&gt;Beginning&lt;/p&gt;');
+$('.element').after('&lt;p&gt;After&lt;/p&gt;');
+$('.element').before('&lt;p&gt;Before&lt;/p&gt;');
+
+// Removing Elements
+$('.element').remove();
+$('.element').empty();
+
+// Traversing
+$('.element').parent();
+$('.element').children();
+$('.element').siblings();
+$('.element').find('.child');</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🎪 Events</h3>
+                <pre><code>// Event Handlers
+$('.button').click(function() {
+    alert('Clicked!');
+});
+
+$('.input').on('keyup', function() {
+    console.log($(this).val());
+});
+
+// Common Events
+.click()     .dblclick()   .mouseenter()
+.mouseleave() .hover()     .focus()
+.blur()      .change()     .submit()
+.keydown()   .keyup()      .resize()
+.scroll()    .load()       .ready()</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>✨ Effects & Animation</h3>
+                <pre><code>// Basic Effects
+$('.element').show();
+$('.element').hide();
+$('.element').toggle();
+
+// Fading
+$('.element').fadeIn();
+$('.element').fadeOut();
+$('.element').fadeToggle();
+$('.element').fadeTo(500, 0.5);
+
+// Sliding
+$('.element').slideDown();
+$('.element').slideUp();
+$('.element').slideToggle();
+
+// Custom Animation
+$('.element').animate({
+    left: '250px',
+    opacity: '0.5',
+    height: '150px',
+    width: '150px'
+}, 1000);</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🌐 AJAX</h3>
+                <pre><code>// GET Request
+$.get('api/data.json', function(data) {
+    console.log(data);
+});
+
+// POST Request
+$.post('api/submit.php', {
+    name: 'John',
+    email: 'john@example.com'
+}, function(response) {
+    console.log(response);
+});
+
+// AJAX with more options
+$.ajax({
+    url: 'api/data.json',
+    type: 'GET',
+    dataType: 'json',
+    success: function(data) {
+        console.log(data);
+    },
+    error: function(xhr, status, error) {
+        console.log('Error: ' + error);
+    }
+});</code></pre>
+            </div>
+        </section>
+
+        <!-- JavaScript Section -->
+        <section id="javascript" class="tab-content">
+            <h2>JavaScript Essentials</h2>
+            
+            <div class="card">
+                <h3>📦 Variables & Data Types</h3>
+                <pre><code>// Variable Declaration
+var name = 'John';          // Function-scoped
+let age = 25;               // Block-scoped
+const PI = 3.14159;         // Constant
+
+// Data Types
+let string = 'Hello World';
+let number = 42;
+let boolean = true;
+let array = [1, 2, 3];
+let object = {name: 'John', age: 25};
+let nullValue = null;
+let undefinedValue = undefined;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🔧 Functions</h3>
+                <pre><code>// Function Declaration
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// Function Expression
+const greet = function(name) {
+    return `Hello, ${name}!`;
+};
+
+// Arrow Function
+const greet = (name) => `Hello, ${name}!`;
+const greet = name => `Hello, ${name}!`;  // Single parameter
+const greet = () => 'Hello World!';       // No parameters
+
+// IIFE (Immediately Invoked Function Expression)
+(function() {
+    console.log('IIFE executed!');
+})();</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Loops & Conditionals</h3>
+                <pre><code>// Conditionals
+if (condition) {
+    // code
+} else if (anotherCondition) {
+    // code
+} else {
+    // code
+}
+
+const result = condition ? 'true' : 'false';  // Ternary
+
+// Loops
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+for (let item of array) {
+    console.log(item);
+}
+
+for (let key in object) {
+    console.log(key, object[key]);
+}
+
+while (condition) {
+    // code
+}</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>📊 Arrays</h3>
+                <pre><code>// Array Methods
+const arr = [1, 2, 3, 4, 5];
+
+arr.push(6);                    // Add to end
+arr.pop();                      // Remove from end
+arr.unshift(0);                 // Add to beginning
+arr.shift();                    // Remove from beginning
+arr.splice(2, 1);               // Remove at index
+arr.slice(1, 3);                // Extract portion
+
+// Higher-order methods
+arr.map(x => x * 2);            // Transform each element
+arr.filter(x => x > 2);         // Filter elements
+arr.reduce((sum, x) => sum + x, 0); // Reduce to single value
+arr.find(x => x > 3);           // Find first match
+arr.forEach(x => console.log(x)); // Iterate</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🏗️ Objects</h3>
+                <pre><code>// Object Creation
+const person = {
+    name: 'John',
+    age: 25,
+    greet() {
+        return `Hello, I'm ${this.name}`;
+    }
+};
+
+// Accessing Properties
+person.name;                    // Dot notation
+person['name'];                 // Bracket notation
+
+// Object Methods
+Object.keys(person);            // Get keys
+Object.values(person);          // Get values
+Object.entries(person);         // Get key-value pairs
+Object.assign({}, person);      // Shallow copy
+{...person};                    // Spread operator copy</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🌐 DOM Manipulation</h3>
+                <pre><code>// Selecting Elements
+document.getElementById('id');
+document.getElementsByClassName('class');
+document.getElementsByTagName('tag');
+document.querySelector('.class');
+document.querySelectorAll('.class');
+
+// Modifying Elements
+element.innerHTML = '&lt;b&gt;Bold text&lt;/b&gt;';
+element.textContent = 'Plain text';
+element.setAttribute('class', 'new-class');
+element.style.color = 'red';
+element.classList.add('new-class');
+element.classList.remove('old-class');
+element.classList.toggle('toggle-class');
+
+// Creating Elements
+const newElement = document.createElement('div');
+newElement.textContent = 'New content';
+parent.appendChild(newElement);</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Events</h3>
+                <pre><code>// Event Listeners
+element.addEventListener('click', function(event) {
+    console.log('Clicked!');
+    event.preventDefault();     // Prevent default behavior
+    event.stopPropagation();    // Stop event bubbling
+});
+
+// Common Events
+click, dblclick, mousedown, mouseup, mouseover, mouseout
+keydown, keyup, keypress
+load, resize, scroll
+focus, blur, change, input, submit
+
+// Event Object Properties
+event.target                    // Element that triggered event
+event.currentTarget             // Element event listener is attached to
+event.type                      // Type of event
+event.preventDefault()          // Prevent default behavior
+event.stopPropagation()         // Stop event bubbling</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Async Programming</h3>
+                <pre><code>// Promises
+const promise = new Promise((resolve, reject) => {
+    if (success) {
+        resolve(data);
+    } else {
+        reject(error);
+    }
+});
+
+promise
+    .then(data => console.log(data))
+    .catch(error => console.error(error))
+    .finally(() => console.log('Done'));
+
+// Async/Await
+async function fetchData() {
+    try {
+        const response = await fetch('api/data.json');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+// Fetch API
+fetch('api/data.json')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>💖 Made with love for web developers 💖</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and content
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
