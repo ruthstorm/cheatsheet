@@ -1,6 +1,14 @@
 # 🌸 Web Development Cheatsheet 🌸
 
-A beautiful, feminine-themed reference guide for web developers featuring essential syntax and tags for HTML, CSS, Sass, jQuery, and JavaScript.
+"A beautiful, feminine-themed reference guide for web developers featuring essential syntax and tags for HTML, CSS, Sass, jQuery, and JavaScript."
+
+This cheatsheet has been generated from this prompt to GitHub CoPilot:
+
+`Create an index and CSS file for me to be used as a "cheatsheet" for referring to tags or syntax of html, css, sass, jquery and javascript. Give it an feminine color scheme and styling.`
+
+and 
+
+`Create an appropriate readme file for this static webpage`
 
 ## ✨ Features
 
@@ -56,34 +64,6 @@ A beautiful, feminine-themed reference guide for web developers featuring essent
 - DOM manipulation
 - Event handling
 - Async programming (Promises, async/await)
-
-## 🚀 Getting Started
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional dependencies required
-
-### Installation
-1. Clone or download this repository
-2. Open `index.html` in your web browser
-3. Start referencing! 🎉
-
-```bash
-# Clone the repository
-git clone https://github.com/ruthstorm/cheatsheet.git
-
-# Navigate to the project directory
-cd cheatsheet
-
-# Open in your default browser (macOS)
-open index.html
-
-# Or open in your default browser (Windows)
-start index.html
-
-# Or open in your default browser (Linux)
-xdg-open index.html
-```
 
 ## 📁 Project Structure
 
@@ -152,23 +132,6 @@ Edit the CSS custom properties in `styles.css`:
 2. Create a corresponding content section
 3. Update the JavaScript tab functionality
 4. Style the new content as needed
-
-## 🤝 Contributing
-
-Contributions are welcome! Here are some ways you can help:
-
-- 🐛 Report bugs or issues
-- 💡 Suggest new features or improvements
-- 📝 Add more code examples
-- 🎨 Improve the design
-- 📖 Enhance documentation
-
-### How to Contribute
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📝 License
 
